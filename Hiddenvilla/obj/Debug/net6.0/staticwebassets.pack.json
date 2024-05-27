@@ -1,0 +1,185 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hiddenvilla.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Hiddenvilla.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\09187998-9f76-4986-8698-fae29ca99ec8.png",
+      "PackagePath": "staticwebassets\\RoomImages\\09187998-9f76-4986-8698-fae29ca99ec8.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\099eecd0-82dc-4bdc-b3b1-64449382e296.png",
+      "PackagePath": "staticwebassets\\RoomImages\\099eecd0-82dc-4bdc-b3b1-64449382e296.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\23f83ea3-d022-4473-93d6-c9488e5bbbae.png",
+      "PackagePath": "staticwebassets\\RoomImages\\23f83ea3-d022-4473-93d6-c9488e5bbbae.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\2bc462cc-76d6-4dcc-9166-b666cd8ae5f0.png",
+      "PackagePath": "staticwebassets\\RoomImages\\2bc462cc-76d6-4dcc-9166-b666cd8ae5f0.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\2cc84f45-ef76-4fde-81cb-17e731a70118.png",
+      "PackagePath": "staticwebassets\\RoomImages\\2cc84f45-ef76-4fde-81cb-17e731a70118.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\3bd435a0-d61d-4d03-a444-33ba4a697430.png",
+      "PackagePath": "staticwebassets\\RoomImages\\3bd435a0-d61d-4d03-a444-33ba4a697430.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\489b5cae-ee71-4618-8e88-dba3a339e13f.png",
+      "PackagePath": "staticwebassets\\RoomImages\\489b5cae-ee71-4618-8e88-dba3a339e13f.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\4d66bf11-971c-4b78-a52b-7dd024f28b4b.png",
+      "PackagePath": "staticwebassets\\RoomImages\\4d66bf11-971c-4b78-a52b-7dd024f28b4b.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\571850f7-5d98-4042-886f-38bd7c43a88a.png",
+      "PackagePath": "staticwebassets\\RoomImages\\571850f7-5d98-4042-886f-38bd7c43a88a.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\64b89c7b-9b8a-4f6c-b5a7-d5fbdcc8c03d.png",
+      "PackagePath": "staticwebassets\\RoomImages\\64b89c7b-9b8a-4f6c-b5a7-d5fbdcc8c03d.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\665f80b4-dbf4-4def-a940-bca4ab3be7da.png",
+      "PackagePath": "staticwebassets\\RoomImages\\665f80b4-dbf4-4def-a940-bca4ab3be7da.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\6f3692d4-3d19-40fa-8bf6-79c3e400fc2c.png",
+      "PackagePath": "staticwebassets\\RoomImages\\6f3692d4-3d19-40fa-8bf6-79c3e400fc2c.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\7c71144a-7448-43a2-8859-3f6c12aea0a2.png",
+      "PackagePath": "staticwebassets\\RoomImages\\7c71144a-7448-43a2-8859-3f6c12aea0a2.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\87047324-88c7-4446-818d-2297e8a0967a.png",
+      "PackagePath": "staticwebassets\\RoomImages\\87047324-88c7-4446-818d-2297e8a0967a.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\8df71251-c288-4803-9316-41d15cdb7604.png",
+      "PackagePath": "staticwebassets\\RoomImages\\8df71251-c288-4803-9316-41d15cdb7604.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\a673fc89-8507-4fef-8daa-82faaa38386a.png",
+      "PackagePath": "staticwebassets\\RoomImages\\a673fc89-8507-4fef-8daa-82faaa38386a.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\a9be3e53-00c0-4dce-91e8-a207283cbed7.png",
+      "PackagePath": "staticwebassets\\RoomImages\\a9be3e53-00c0-4dce-91e8-a207283cbed7.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\ae2a8d4c-57d0-49c4-97bf-bc2c48d04755.png",
+      "PackagePath": "staticwebassets\\RoomImages\\ae2a8d4c-57d0-49c4-97bf-bc2c48d04755.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\d45e6f3d-024e-4eac-be67-8e5d995c7d58.png",
+      "PackagePath": "staticwebassets\\RoomImages\\d45e6f3d-024e-4eac-be67-8e5d995c7d58.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\dac96979-c043-4588-81f3-37930e753239.png",
+      "PackagePath": "staticwebassets\\RoomImages\\dac96979-c043-4588-81f3-37930e753239.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\e0645ad6-56f5-4869-b22f-c3f7fe4319a6.png",
+      "PackagePath": "staticwebassets\\RoomImages\\e0645ad6-56f5-4869-b22f-c3f7fe4319a6.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\e1a6c935-42f3-4267-82a1-22c86e3a757f.png",
+      "PackagePath": "staticwebassets\\RoomImages\\e1a6c935-42f3-4267-82a1-22c86e3a757f.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\e42e2cac-a854-454c-b1a0-ac66d3647254.png",
+      "PackagePath": "staticwebassets\\RoomImages\\e42e2cac-a854-454c-b1a0-ac66d3647254.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\ef03714e-5af1-43d7-b1a0-a2a385c1fc83.png",
+      "PackagePath": "staticwebassets\\RoomImages\\ef03714e-5af1-43d7-b1a0-a2a385c1fc83.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\f9e08868-859a-4646-9a2a-3a02bd5aad9d.png",
+      "PackagePath": "staticwebassets\\RoomImages\\f9e08868-859a-4646-9a2a-3a02bd5aad9d.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\RoomImages\\fa634a69-d2c3-47b6-ba1d-953c2fed3019.png",
+      "PackagePath": "staticwebassets\\RoomImages\\fa634a69-d2c3-47b6-ba1d-953c2fed3019.png"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\TE-388\\Desktop\\project\\Hiddenvilla\\Hiddenvilla\\wwwroot\\js\\Common.js",
+      "PackagePath": "staticwebassets\\js\\Common.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Hiddenvilla.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Hiddenvilla.props",
+      "PackagePath": "build\\Hiddenvilla.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Hiddenvilla.props",
+      "PackagePath": "buildMultiTargeting\\Hiddenvilla.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Hiddenvilla.props",
+      "PackagePath": "buildTransitive\\Hiddenvilla.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

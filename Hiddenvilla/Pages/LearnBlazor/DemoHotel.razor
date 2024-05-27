@@ -1,0 +1,141 @@
+﻿@page "/demohotel"
+@using Data
+@using Hiddenvilla.Pages.LearnBlazor.LearnBlazorComponent
+ 
+@* we can also include the above @using inside _import.razor if we do so than we can access the editdelete button component anywhere in the
+
+project, while dooing so u may encounter error ,if error comes build the solution and then run. *@
+
+<h3>We will display hotel rooms and amenities here !</h3>
+<div class="border p-2 mt-2" style="background-color:azure">
+	<h2 class="text-info">Rool List[USING COMPONENT]</h2>
+	<div class = "row container">
+		
+		@foreach(var i in RoomsList)
+		{
+			<div class="bg-light border p-2 col-5">
+				@* <h4 class="text-secondary">Room-@i.Id</h4>
+				@i.RoomName
+				<br/>
+				@i.Price.ToString("c");<br/>
+				<input type="checkbox" @bind-value = "@i.IsActive"  checked="@(i.IsActive?"checked":null)"/>
+				<span>The Room is @(i.IsActive ? "Active" : "InActive") </span>
+				@if (i.IsActive)
+				{
+					<p>	@i.RoomName - @i.Price ;</p>
+				}
+				<br/> *@
+		@* 		writing the above code in IndividualRoom and then passing it as component *@
+				<div class="col-12">
+					<h4 class="text-info">Hotel Rooms</h4>
+					<span>Rooms Selected - @SelectedRooms</span>
+				</div>
+				<IndividualRoom OnRoomCheckBoxSelection="RoomSelectionCounterChanged" room="@i"></IndividualRoom>
+				 @* <button type="button" class="btn btn-danger">Delete</button>
+				 <button type="button" class="btn btn-success">Edit</button> *@
+			@* 	 replace the above statementof button via button component *@
+
+				 <EditDeleteButton IsAdmin="false"></EditDeleteButton>
+			</div>
+			}
+				<div class="col-12 mt-4">
+					<h4 class="text-info">Hotel Amenities</h4>
+				</div>
+				<div class="bg-light border p-2 row-2">
+				@foreach(var j in AmenitiesList)
+				{
+					<IndividualAmenities Amenities="@j">
+						<FisrtFragment>#1</FisrtFragment>
+						<SecondFragment>#2</SecondFragment>
+					</IndividualAmenities>
+				}
+				</div>
+			
+				
+
+
+
+	</div>
+</div>
+@code {
+
+
+	List<BlazorRoom> RoomsList = new List<BlazorRoom>();
+	List<BlazorAmenities> AmenitiesList = new List<BlazorAmenities>();
+	public int SelectedRooms { get; set; } = 0;
+
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+		RoomsList.Add(new Data.BlazorRoom()
+			{
+				Id = 100,
+				RoomName = "Villa Suite one bed room",
+				IsActive = true,
+				Price = 399,
+
+				RoomProps = new List<BlazorRoomProp>
+			{
+				 new Data.BlazorRoomProp  {Id=1,Name = "sq ft",value = "100" },
+				 new Data.BlazorRoomProp  {Id=2,Name = "occupancy",value = "2" }
+			}
+			}
+		);
+
+		RoomsList.Add(new Data.BlazorRoom()
+			{
+				Id = 101,
+				RoomName = "Villa Suite two bed room",
+				IsActive = true,
+				Price = 499,
+
+				RoomProps = new List<BlazorRoomProp>
+			{
+				 new Data.BlazorRoomProp  {Id=1,Name = "sq ft",value = "200" },
+				 new Data.BlazorRoomProp  {Id=2,Name = "occupancy",value = "4" }
+			}
+			}
+		);
+		AmenitiesList.Add(
+			new Data.BlazorAmenities
+			{
+				Id= 212,
+				Name = "Gym",
+				Description = "24X7 Gym is avaialble"
+			}
+
+		);
+		AmenitiesList.Add(
+			new Data.BlazorAmenities
+				{
+					Id = 213,
+					Name = "Swimming pool",
+					Description = "24X7 Swimming pool is avaialble"
+				}
+
+		);
+		AmenitiesList.Add(
+			new Data.BlazorAmenities
+				{
+					Id = 214,
+					Name = "Free BreakFast",
+					Description = "	9 AM - 11AM  is avaialble"
+				}
+
+		);
+	}
+
+	protected void RoomSelectionCounterChanged(bool isRoomSelected)
+	{
+		if (isRoomSelected)
+		{
+			SelectedRooms++;
+		}
+		else
+		{
+			SelectedRooms--;
+		}
+	}
+
+
+}

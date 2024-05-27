@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HiddenVilla_API.props" />
+</Project>

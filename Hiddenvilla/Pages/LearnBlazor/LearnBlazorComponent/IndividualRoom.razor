@@ -1,0 +1,29 @@
+﻿
+@using Hiddenvilla.Data
+<h4 class="text-secondary">Room-@room.Id</h4>
+<input type="checkbox" @onchange="RoomCheckBoxSelectionChanged" />
+@room.RoomName
+<br />
+@room.Price.ToString("c");
+<br />
+<input type="checkbox" @bind-value="@room.IsActive" checked="@(room.IsActive?"checked":null)" />
+<span>The Room is @(room.IsActive ? "Active" : "InActive") </span>
+@if (room.IsActive)
+{
+	<p>	@room.RoomName - @room.Price ;</p>
+}
+<br />
+@code {
+
+	[Parameter]
+	public BlazorRoom room { get; set; }
+
+	[Parameter]
+	public EventCallback<bool> OnRoomCheckBoxSelection { get; set; }
+	protected async Task RoomCheckBoxSelectionChanged(ChangeEventArgs e) 
+	{
+		await OnRoomCheckBoxSelection.InvokeAsync((bool)e.Value);
+	}
+
+
+}

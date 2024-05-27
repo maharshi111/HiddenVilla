@@ -1,0 +1,121 @@
+﻿@page "/binddata"
+@using Data
+
+<h2 class= "bg-light border p-2" >First Room</h2>
+Room: @Room.RoomName
+<br />
+Price: @Room.Price
+<br />
+@*  <input type = "number" value = "@Room.Price" />// one way binding  *@
+<input type="number" @bind-value="@Room.Price"  @bind-value:event = "oninput"/>
+<br />
+<input type="checkbox" @bind-value = "@Room.IsActive" checked="@(Room.IsActive?"checked":null)" />
+<br/>
+<span>The Room is @GetData()</span> 
+
+<select @bind ="SelectedRoomProp">
+	
+
+	@foreach( var i  in  @Room.RoomProps)
+		{
+			<option value= "@i.Name"> @i.Name </option>
+		}
+
+</select>
+
+<span>	The Room prop selected is : @SelectedRoomProp </span>
+
+<br />
+
+<h2 class="text-info">Room List [Assigment 2 ]</h2>
+<table class="table table-light">
+	@foreach(var room in RoomsList)
+	{
+		<tr>
+			<td>
+				<input type="text"  @bind-value="room.RoomName" @bind-value:event = "oninput" />
+				
+			</td>
+			<td>
+				<input type="text" @bind-value="room.Price" @bind-value:event="oninput" />
+
+			</td>
+			@foreach (var roomProp in room.RoomProps)
+				{
+				    <td>@roomProp.Name - @roomProp.value</td> 		
+					
+				}
+
+		</tr>
+		
+	}
+
+</table>
+<br/>
+@foreach(var i in RoomsList)
+{
+	<p> @i.RoomName's price is @i.Price</p>
+
+}
+@code{
+
+	string SelectedRoomProp = "";
+	List<BlazorRoom> RoomsList = new List<BlazorRoom>();
+
+	BlazorRoom Room = new Data.BlazorRoom()  // see we it was before Data.BlazorRoom Room = new Data.BlazorRoom() but we can remove Data. as prefix
+												// as we are now addind @using Data at the top
+		{
+			Id = 1,
+			RoomName = "Villa Suite",
+			IsActive = true,
+			Price = 499,
+
+			RoomProps= new List<BlazorRoomProp> 
+			{
+				 new Data.BlazorRoomProp  {Id=1,Name = "sq ft",value = "100" },
+				 new Data.BlazorRoomProp  {Id=2,Name = "occupancy",value = "4" }
+			}
+		};
+
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+		RoomsList.Add(new Data.BlazorRoom()
+			{
+				Id = 100,
+				RoomName = "Villa Suite one bed room",
+				IsActive = true,
+				Price = 399,
+
+				RoomProps = new List<BlazorRoomProp>
+			{
+				 new Data.BlazorRoomProp  {Id=1,Name = "sq ft",value = "100" },
+				 new Data.BlazorRoomProp  {Id=2,Name = "occupancy",value = "2" }
+			}
+			}
+		);
+
+		RoomsList.Add(new Data.BlazorRoom()
+			{
+				Id = 101,
+				RoomName = "Villa Suite two bed room",
+				IsActive = true,
+				Price = 499,
+
+				RoomProps = new List<BlazorRoomProp>
+			{
+				 new Data.BlazorRoomProp  {Id=1,Name = "sq ft",value = "200" },
+				 new Data.BlazorRoomProp  {Id=2,Name = "occupancy",value = "4" }
+			}
+			}
+		);
+		
+	}
+
+	public string GetData()
+	{
+		return Room.IsActive ? "Active" : "InActive";
+	}
+
+	
+}

@@ -1,0 +1,36 @@
+﻿@page "/ParentComponent"
+<h1 class ="text-danger"> Parent-Child Component</h1>
+<ChildComponent @ref="ChildComp"
+	OnClickBtnMethod="ShowMsg" 
+	Title="This titile is Passed from Parent Component"
+>
+	<ChildContent> Render Fragment from Parent! WoHoo! </ChildContent>
+	<DangerChildContent> Danger content from DangerChildContent </DangerChildContent>
+
+</ChildComponent>
+<AnotherChildComponent placeholder="Placeholder default"></AnotherChildComponent>
+<p><b>@messageText</b></p>
+@* to acces the data from whitin the tag we use Render Fragment *@
+@* <ChildComponent Title="Second Child COM">
+
+</ChildComponent> *@
+
+<div class="row">
+	<button class="btn btn-success" @onclick="()=>ChildComp.ShowToastrSuccess()">Show Alert</button>
+</div>
+@code {
+	private ChildComponent ChildComp; /* here we are creating a  ChildComponent via refrencing see vedio 75 */
+
+	// public Dictionary<string, object> InputAttributesFromParents = new Dictionary<string, object>()
+	// {
+	// 	{"required","required"},
+	// 	{"placeholder","Enter the Room Name from parents"},
+	// 	{"maxlength",5}
+	// };
+
+	private string messageText = "";
+	private void ShowMsg(MouseEventArgs e)
+	{
+		messageText = "Blazzign Text from Parents";
+	}
+}

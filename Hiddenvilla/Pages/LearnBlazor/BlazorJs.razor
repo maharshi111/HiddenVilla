@@ -1,0 +1,82 @@
+﻿@page "/blazorjs"
+@inject IJSRuntime JsRuntime
+@* blazor provides a IJS runtime , which represents instance of a JS object  *@
+
+<div class="row">
+	<button class="btn-secondary" @onclick = "TestConfirmBox">Test Confirm Box</button>
+</div>
+<div class="row">
+	<button class="btn-secondary" @onclick="TestSuccess">Test Toastr Success</button>
+</div>
+<div class="row">
+	<button class="btn-secondary" @onclick="TestFailure">Test Toastr Failure</button>
+</div>
+<div class="row">
+	<button class="btn-secondary" @onclick="TestSuccessSwal">Test Swal Success</button>
+</div>
+<div class="row">
+<button class="btn-secondary" @onclick="TestFailureSwal">Test Swal Failure</button>
+</div>
+
+<div class="row">
+	@if (ConfirmResult)
+	{
+		<p>Confirmation has been made</p>
+	}
+	else
+	{
+		<p>Confirmation has not been made</p>
+	}
+</div>
+@code {
+	private string ConfirmMessage = "Are you sure you want to click?";
+	private bool ConfirmResult { get; set; }
+	private async Task TestConfirmBox()
+	{
+		ConfirmResult = await JsRuntime.InvokeAsync<bool>("confirm", ConfirmMessage);
+		// here CONFIRM IS the name of function which we need to call
+	}
+
+	private async Task TestSuccess()
+	{
+		//await JsRuntime.InvokeVoidAsync("ShowToastr", "success" ,"msg Success");
+		//(function to be called, type , msg to be displayed)
+		// now writing it more  efficiently see IJSRuntimeExtension.JS inside Helper folder
+		await JsRuntime.ToastrSuccess("Success msg");
+	}
+
+	private async Task TestFailure()
+	{
+		// await JsRuntime.InvokeVoidAsync("ShowToastr", "error","msg Error");
+		await JsRuntime.ToastrError("Error msg");
+	}
+
+	private async Task TestSuccessSwal()
+	{
+	
+		await JsRuntime.InvokeVoidAsync("ShowSwal", "success", "msg success for SWAL");
+	}
+
+	private async Task TestFailureSwal()
+	{
+
+		await JsRuntime.InvokeVoidAsync("ShowSwal", "error", "msg error for SWAL");
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+@* The InvokeAsync method in Blazor is used to invoke JavaScript functions asynchronously from C# code. You typically use InvokeAsync when you need to interact with JavaScript code from your Blazor components. Here are some scenarios where you might use InvokeAsync:
+
+Interacting with Browser APIs: When you need to access browser APIs that are not directly accessible from C#, such as manipulating the DOM or working with browser-specific features, you can use InvokeAsync to call JavaScript functions that access these APIs.
+Handling User Interactions: If you want to capture user interactions that are only possible through JavaScript, like confirming a user action with a JavaScript dialog box (as in the example you provided), you would use InvokeAsync to call the corresponding JavaScript function.
+Third-Party Library Integration: When integrating with third-party JavaScript libraries that provide functionality not available in C#, you might need to use InvokeAsync to call functions exposed by those libraries.
+Performance Considerations: In cases where you're performing long-running JavaScript operations that could potentially block the UI thread, you might use InvokeAsync to execute those operations asynchronously to prevent UI freezing *@

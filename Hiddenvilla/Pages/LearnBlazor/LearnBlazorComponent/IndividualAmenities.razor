@@ -1,0 +1,17 @@
+﻿@using Hiddenvilla.Data
+<div class="border p-2 col- 5 mt-2 offset-1" style="background-color:azure">
+	<h4 class= "text-secondary"> @Amenities.Id </h4>
+	@Amenities.Name<br/>
+	@Amenities.Description<br />
+	RF from parents - @FisrtFragment @SecondFragment
+</div>
+@code {
+
+	[Parameter]
+	public BlazorAmenities Amenities { get; set; }
+	[Parameter]
+	public RenderFragment FisrtFragment { get; set; }
+
+	[Parameter]
+	public RenderFragment SecondFragment { get; set; }
+}

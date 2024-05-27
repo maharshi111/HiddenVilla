@@ -1,0 +1,46 @@
+﻿@inject IJSRuntime JsRuntime
+
+<div>
+	<div class= "alert alert-info">@Title</div>
+	@* <span>@ChildContent</span> *@
+	@if (DangerChildContent == null)
+	{
+
+
+		@if (ChildContent == null)
+		{
+			<span>This is empty</span>
+
+		}
+		else
+		{
+			<span>@ChildContent
+			</span>
+		}
+	}
+	else
+	{
+			<span>@DangerChildContent</span>
+	}
+	<button class="btn-danger" @onclick="OnClickBtnMethod" >Btn to be clicked</button>
+
+</div>
+
+@code {
+	[Parameter]
+	public string Title { get; set; }
+
+	[Parameter]
+	public RenderFragment ChildContent { get; set; }
+
+	[Parameter]
+	public RenderFragment DangerChildContent { get; set; }
+
+	[Parameter]
+	public EventCallback<MouseEventArgs> OnClickBtnMethod{ get; set; }
+
+	public async Task ShowToastrSuccess()
+	{
+		await JsRuntime.ToastrSuccess("success of toaster");
+	}
+}
